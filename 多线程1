@@ -1,0 +1,77 @@
+package com.atguigu.java;
+
+/**
+ * @author iehmltym
+ * 尊重规律，发挥能动；
+ * 认识必然，争取自由；
+ * 实践概率，相信奇迹；
+ * 信念勇气，开放坚持。
+ * @create 2022-12-03  20:34
+ */
+
+/**
+ * 多线程的创建方式：
+ *
+ * 方式一：继承于Thread类的子类
+ * 1创建一个集成于Thread类的子类
+ * 2重写Thread类的run（）方法
+ * 将此线程声明的操作 声明在run（）方法中
+ * 3 创建Thread类的子类的对象
+ * 4通过此对象来调用start（）
+ *
+ *
+ *
+ * 例子：遍历100以内的所有的偶数
+ */
+
+
+//创建一个继承于Thread类的子类
+    class  MyThread  extends Thread {
+
+    /**
+     * //2重写Thread类的run（）方法
+     *
+     *     public void run() {
+     *         if (target != null) {
+     *             target.run();
+     *         }
+     *     }
+     *
+     * }
+     *
+     */
+    public void run() {
+        for (int i = 0; i < 500; i++) {
+            if(i%2==0){
+                System.out.println(Thread.currentThread().getName()+":"+i);
+            }
+        }
+
+    }
+
+
+    }
+public class ThreadTest {
+    public static void main(String[] args) {
+//     3   创建Thread类的子类的对象
+
+        MyThread t1 = new MyThread();
+//        快捷键：optin + enter
+//4通过此对象来调用start（）方法:a启动当前线程 b调用当前线程的run（）
+        t1.start();//多线程的启动按钮
+       //若不用 t1.start(); 而是 t1.run() 能遍历偶数，但是只是普通的调方法，不是分出去了一个线程
+        // 这个方法执行完之后，才会进行乌鲁木齐打印的工作。
+        System.out.println("乌鲁木齐");
+
+            for (int i = 0; i < 100; i++) {
+                if(i%2==0){
+                    System.out.println(Thread.currentThread().getName()+":"+i);
+                }
+            }
+
+
+
+
+    }
+
+}
