@@ -1,0 +1,74 @@
+//多线程day01
+
+package com.atguigu.java;
+
+/**
+ * @author 
+ * @create 2022-12-03  20:34
+ */
+
+/**
+ * 多线程的创建方式：
+ *
+ * 方式一：继承于Thread类的子类
+ * 1创建一个集成于Thread类的子类
+ * 2重写Thread类的run（）方法
+ * 将此线程声明的操作 声明在run（）方法中
+ * 3 创建Thread类的子类的对象
+ * 4通过此对象来调用start（）
+ *
+ *
+ *
+ * 例子：遍历100以内的所有的偶数
+ */
+
+
+//创建一个继承于Thread类的子类
+    class  MyThread  extends Thread {
+
+    /**
+     * //2重写Thread类的run（）方法
+     *
+     *     public void run() {
+     *         if (target != null) {
+     *             target.run();
+     *         }
+     *     }
+     *
+     * }
+     *
+     */
+    public void run() {
+        for (int i = 0; i < 500; i++) {
+            if(i%2==0){
+                System.out.println(i);
+            }
+        }
+
+    }
+
+
+    }
+public class ThreadTest {
+    public static void main(String[] args) {
+//     3   创建Thread类的子类的对象
+
+        MyThread t1 = new MyThread();
+//        快捷键：optin + enter
+//4通过此对象来调用start（）方法
+t1.start();
+
+        System.out.println("乌");
+
+            for (int i = 0; i < 100; i++) {
+                if(i%2==0){
+                    System.out.println("------main"+i);
+                }
+            }
+
+
+
+
+    }
+
+}
