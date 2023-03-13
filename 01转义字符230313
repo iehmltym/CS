@@ -40,3 +40,15 @@ java ChangeChar
 内在时间全情投入。
 全情投入。
 */
+
+
+生成javadoc文件：
+1pwd显示当前文件夹的路径
+2复制进去 用 javadoc -d  路径/目标文件夹 - author - version  文件 
+
+wangqian@tuodeMacBook-Air reviewjava0311 % pwd
+/Users/wangqian/Desktop/reviewjava0311
+wangqian@tuodeMacBook-Air reviewjava0311 % javadoc -d /Users/wangqian/Desktop/reviewjava0311/temp -author -version  ChangeChar.java
+
+
+
