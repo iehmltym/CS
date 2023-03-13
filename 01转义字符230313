@@ -1,0 +1,29 @@
+public class ChangeChar{
+public static  void main(String [] args)
+{	System.out.println("觉察临在内在时间全情投入");
+	System.out.println("觉察临在\t内在时间\t全情投入");
+	System.out.println("\n\n觉察临在\n内在时间\n全情投入\n");
+	System.out.println("觉察临在\\内在时间\\全情投入\\");
+	System.out.println("觉察临在\\\\内在时间\\\\全情投入\\\\");
+	System.out.println("我说：\"觉察临在内在时间全情投入\"。");
+	System.out.println("我说：\"觉察临在内在时间全情投入\"。");
+	System.out.println("我说：\"觉察临在内在时间全情投入\"。");
+	System.out.println("我说：\'觉察临在内在时间全情投入\'。");
+	System.out.println("觉察临在\r内在时间全情投入。");
+	System.out.println("觉察临在\r\n内在时间全情投入。");
+	System.out.println("觉察临在\r内在时间\r全情投入。");
+}
+
+}
+/**
+结果示例：
+  觉察临在内在时间全情投入
+觉察临在	内在时间	全情投入
+
+
+觉察临在
+内在时间
+全情投入
+
+觉察临在\内在时间\全情投入\
+*/
