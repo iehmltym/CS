@@ -17,7 +17,11 @@ public static  void main(String [] args)
 }
 /**
 结果示例：
-  觉察临在内在时间全情投入
+javac ChangeChar.java
+、java ChangeChar 
+
+java ChangeChar 
+觉察临在内在时间全情投入
 觉察临在	内在时间	全情投入
 
 
@@ -26,4 +30,13 @@ public static  void main(String [] args)
 全情投入
 
 觉察临在\内在时间\全情投入\
+觉察临在\\内在时间\\全情投入\\
+我说："觉察临在内在时间全情投入"。
+我说："觉察临在内在时间全情投入"。
+我说："觉察临在内在时间全情投入"。
+我说：'觉察临在内在时间全情投入'。
+内在时间全情投入。
+觉察临在
+内在时间全情投入。
+全情投入。
 */
